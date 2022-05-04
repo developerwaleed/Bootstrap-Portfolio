@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <style>
+    body {
+      position: relative;
+    }
+  </style>
   <title>BootStrap Portfolio</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
   <header>
     <nav class="navbar fixed-top navbar-light bg-white">
       <div class="container-fluid justify-content-center">
         <ul class="nav justify-content-center">
-          <li class="nav-item">
+          <li>
             <a class="nav-link active fs-5" aria-current="page" href="#">Portfolio</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link fs-5" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link fs-5" href="#">Contact</a>
           </li>
         </ul>
@@ -32,36 +36,342 @@
   <section class="container-fluid mt-5 pt-4 text-center ">
     <h1 class="mt-5 pt-5 display-2 ">Hey there. I’m Alex. <br>
       I’m a software developer</h1>
-      <p class="h5 pt-4 ">
-        I can help you build a product , feature or website Look through some of my work and experience!<br> If you like what you see and have a project you need coded, <br>
-        don’t hestiate to contact me.
-      </p>
-      <ul class="list-unstyled list-inline mt-5 pt-5">
-        <li class="list-inline-item"><a href="https://twitter.com/"><img src="./icons/Social_icon1.png"
-                    alt="Twitter"></a></li>
+    <p class="h5 pt-4 ">
+      I can help you build a product , feature or website Look through some of my work and experience!<br> If you like
+      what you see and have a project you need coded, <br>
+      don’t hestiate to contact me.
+    </p>
+    <ul class="list-unstyled list-inline mt-5 pt-5">
+      <li class="list-inline-item"><a href="https://twitter.com/"><img src="./icons/Social_icon1.png" alt="Twitter"></a>
+      </li>
 
-        <li class="list-inline-item ms-2"><a href="https://www.linkedin.com/"><img src="./icons/Social_icon2.png"
-                    alt="Linkedin"></a></li>
+      <li class="list-inline-item ms-2"><a href="https://www.linkedin.com/"><img src="./icons/Social_icon2.png"
+            alt="Linkedin"></a></li>
 
-        <li class="list-inline-item ms-2"><a href="https://medium.com/"><img src="./icons/Social_icon3.png"
-                    alt="Medium"></a></li>
+      <li class="list-inline-item ms-2"><a href="https://medium.com/"><img src="./icons/Social_icon3.png"
+            alt="Medium"></a></li>
 
-        <li class="list-inline-item ms-2"><a href="https://github.com"><img src="./icons/Social_icon4.png"
-                    alt="Github"></a></li>
+      <li class="list-inline-item ms-2"><a href="https://github.com"><img src="./icons/Social_icon4.png"
+            alt="Github"></a></li>
 
-        <li class="list-inline-item ms-2"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
-                    alt="angellist"></a></li>
+      <li class="list-inline-item ms-2"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
+            alt="angellist"></a></li>
     </ul>
 
-    </section>
-    <section class="justify-content-center text-center pt-5 mt-5">
-    
-      <img class="justify-content-center" src="./icons/down-arrow.svg" alt="down-arrow">
-      <h3 class="" style="margin-top: 10rem;">My Recent Works <h3>
-    </section>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  </section>
+
+  <section class="justify-content-center text-center pt-5 mt-5">
+
+    <img class="justify-content-center" src="./icons/down-arrow.svg" alt="down-arrow">
+    <h3 class="" style="margin-top: 14rem;">My Recent Works
+    </h3>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-5 pt-4">
+
+      <div class="col " style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col " style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col" style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col pt-5 " style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-5" style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-5" style="width: 500px">
+        <div class="card ">
+          <img src="./icons/Framework.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h4 class="card-title">Multi-Post Stories<br> Gain+Glory</h4>
+
+            <ul class="card-text mt-5 list-unstyled list-inline">
+              <li class="list-inline-item h5 bg-light p-2">
+                Ruby on rails
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                Css
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                JavaScript
+              </li>
+              <li class="list-inline-item h5 bg-light p-2">
+                HTML
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success mt-5" data-bs-toggle="modal" data-bs-target="#myModal">See Project</button>
+
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">JavaScript Project</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem aspernatur corporis tenetur veritatis vero suscipit, ipsum officia recusandae ipsa?
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
