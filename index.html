@@ -20,6 +20,25 @@
     .nav-pills > li > a.active {
     background-color: #36B37E !important;
 }
+.first-section {
+  height: 890px;
+  background-image: url(./icons/desktop-bg.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.about-me {
+  background-image: url(./icons/About1.svg),url(./icons/desk-f1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -20px right, bottom 20px left;
+}
+footer {
+  background-image: url(./icons/desk-f1.svg), url(./icons/desk-f2.svg), url(./icons/desk-f3.svg);
+  background-repeat: no-repeat;
+    background-position: bottom 100px left, bottom 100px left 300px, bottom 100px right;
+    background-size: 150px;
+}
   </style>
   <title>BootStrap Portfolio</title>
 </head>
@@ -33,17 +52,17 @@
             <a class="nav-link active fs-5 green-color" aria-current="page" href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a class="nav-link fs-5 navbar-color" href="#about">About</a>
+            <a class="nav-link fs-5 green-color" href="#about">About</a>
           </li>
           <li>
-            <a class="nav-link fs-5 navbar-color" href="#contact">Contact</a>
+            <a class="nav-link fs-5 green-color" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <section class="container-fluid mt-5 pt-4 text-center ">
+  <section class=" first-section container-fluid mt-5 pt-4 text-center ">
     <h1 class="mt-5 pt-5 display-2 ">Hey there. I’m Alex. <br>
       I’m a software developer</h1>
     <p class="h5 pt-4 ">
@@ -67,14 +86,14 @@
       <li class="list-inline-item ms-2"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
             alt="angellist"></a></li>
     </ul>
-
+    <a href="#portfolio">
+      <img class="justify-content-center mt-5 pt-5" src="./icons/down-arrow.svg" alt="down-arrow"></a>
   </section>
 <section data-bs-spy="scroll" data-bs-target="#epic-navbar" data-bs-offset="0" class="scrollspy-example">
   <section class="justify-content-center text-center pt-5 mt-5">
 
-    <a href="#portfolio">
-    <img class="justify-content-center" src="./icons/down-arrow.svg" alt="down-arrow"></a>
-    <h3 id="portfolio"  style="margin-top: 14rem;">My Recent Works
+    
+    <h3 id="portfolio">My Recent Works
     </h3>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-5 pt-4">
@@ -379,7 +398,7 @@
     </div>
   </section>
 
-  <section class="pt-5 mt-5 text-center">
+  <section class=" about-me pt-5 mt-5 text-center">
     <h3 id="about" class="display-4">About me</h3>
     <p class="pt-2 h5"> I can help you build a product , feature or website Look through some of my work and experience! If you like <br> what you see and have a project you need coded, 
       don’t hestiate to contact me.</p>
@@ -479,8 +498,49 @@
     </div>
   </div>
 </section>
-<footer class="mt-5 pt-5 ">
-  <p class="lead px-5 " style="font-size: 2.5rem;">I'm always interested in hearing about <br>new projects, so if you'd like to chat <br>please get in touch.</p>
+<footer class="text-center">
+  <div class="mt-5 pt-5 container ">
+  <div class="row">
+  <div class="col">
+    <p class="lead" style="font-size: 2.5rem;">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+  </div>
+  <div class="col">
+  <form class="" action="https://formspree.io/f/mnqwodgq" method="post">
+      <label>
+          <input class="form-control" type="text" maxlength="30" name="user" placeholder="First Name" required>
+      </label>
+      <label>
+          <input class="form-control" type="text" maxlength="30" name="user" placeholder="Last Name" required>
+      </label>
+      <label class="pt-2">
+          <input class="form-control" style="width:458px" type="email"  maxlength="30" name="email" placeholder="Email Address"
+              required>
+      </label>
+      <label class="pt-2 px-5">
+          <textarea class="form-control" style="width:458px" maxlength="500" name="message" placeholder="Typing Something" required></textarea>
+      </label>      
+      <button class="btn btn-outline-success " type="submit">Get in Touch</button>
+    </form>
+  </div>
+</div>
+</div>
+<ul class="list-unstyled list-inline mt-5 pt-5">
+  <li class="list-inline-item"><a href="https://twitter.com/"><img src="./icons/Social_icon1.png" alt="Twitter"></a>
+  </li>
+
+  <li class="list-inline-item ms-2"><a href="https://www.linkedin.com/"><img src="./icons/Social_icon2.png"
+        alt="Linkedin"></a></li>
+
+  <li class="list-inline-item ms-2"><a href="https://medium.com/"><img src="./icons/Social_icon3.png"
+        alt="Medium"></a></li>
+
+  <li class="list-inline-item ms-2"><a href="https://github.com"><img src="./icons/Social_icon4.png"
+        alt="Github"></a></li>
+
+  <li class="list-inline-item ms-2"><a href="https://angel.co/"><img src="./icons/Social_icon5.png"
+        alt="angellist"></a></li>
+</ul>
+  <img src="./icons/foot-ind.svg" alt="">
 </footer>
   <script>
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
